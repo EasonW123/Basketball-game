@@ -30,6 +30,7 @@ namespace Basketball_game
                 else if (scene == 3) { scene = 7; }
                 else if (scene == 7) { scene = 16; }
                 else if (scene == 16) { scene = 29; }
+                else if (scene == 6) { scene = 13; }
                 else if (scene == 29)
                 {
                     int randValue = ranGen.Next(1, 101);
@@ -120,224 +121,267 @@ namespace Basketball_game
             {
                 
                 case 1:
-                    outputLabel.Text = "What do you want to be?";
-                    redLabel.Text = "Lebron James";
-                    blueLabel.Text = "Kyrie Ivring";
-                    yellowLabel.Text = "";
+                    outLabel.Text = "What do you want to be?";
+                    rLabel.Text = "Lebron James";
+                    bLabel.Text = "Kyrie Ivring";
+                    yLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.kyrie__lebron;
                     break;
                 case 2:
-                    outputLabel.Text = "Who do you want to play against?";
-                    redLabel.Text = "Chris Paul";
-                    blueLabel.Text = "Luka Doncic";
+                    outLabel.Text = "Who do you want to play against?";
+                    rLabel.Text = "Chris Paul";
+                    bLabel.Text = "Luka Doncic";
+                    sceneImage.BackgroundImage = Properties.Resources.luka_chris;
                     break;
                 case 3:
-                    outputLabel.Text = "Who do you want to play against?";
-                    redLabel.Text = "Chris Paul";
-                    blueLabel.Text = "Luka Doncic";
+                    outLabel.Text = "Who do you want to play against?";
+                    rLabel.Text = "Chris Paul";
+                    bLabel.Text = "Luka Doncic";
+                    sceneImage.BackgroundImage = Properties.Resources.luka_chris;
                     break;
                 case 4:
-                    outputLabel.Text = "Game to 1, you start with the ball. What do you want to do?";
-                    redLabel.Text = "Shoot it in his face";
-                    blueLabel.Text = "Dribble";
+                    outLabel.Text = "Game to 1, you start with the ball. What do you want to do?";
+                    rLabel.Text = "Shoot it in his face";
+                    bLabel.Text = "Dribble";
+                    sceneImage.BackgroundImage = Properties.Resources.kyrie_w_ball;
                     break;
                 case 5:
-                    outputLabel.Text = "Game to 1, you start with the ball. What do you want to do?";
-                    redLabel.Text = "Shoot";
-                    blueLabel.Text = "Pump fake";
+                    outLabel.Text = "Game to 1, you start with the ball. What do you want to do?";
+                    rLabel.Text = "Shoot";
+                    bLabel.Text = "Pump fake";
+                    sceneImage.BackgroundImage = Properties.Resources.kyrie_w_ball;
                     break;
                 case 6:
-                    outputLabel.Text = "Game to 1, you start with the ball. What do you want to do?";
-                    redLabel.Text = "Drive";
-                    blueLabel.Text = "Pass";
+                    outLabel.Text = "Game to 1, you start with the ball. What do you want to do?";
+                    rLabel.Text = "Drive";
+                    bLabel.Text = "Pass";
+                    sceneImage.BackgroundImage = Properties.Resources.lebron_against_luka;
                     break;
                 case 7:
-                    outputLabel.Text = "Game to 1, you start with the ball. What do you want to do?";
-                    redLabel.Text = "Post up";
-                    blueLabel.Text = "Dribble";
-                    yellowLabel.Text = "Pass";
+                    outLabel.Text = "Game to 1, you start with the ball. What do you want to do?";
+                    rLabel.Text = "Post up";
+                    bLabel.Text = "Dribble";
+                    yLabel.Text = "Pass";
+                    sceneImage.BackgroundImage = Properties.Resources.lb_against_cp;
                     break;
                 case 8:
-                    outputLabel.Text = "You fake left and then crossover to the right. Doncic stays in front of you. What do you do next?";
-                    redLabel.Text = "Hesi spin";
-                    blueLabel.Text = "Step back three";
+                    outLabel.Text = "You fake left and then crossover to the right. Doncic stays in front of you. What do you do next?";
+                    rLabel.Text = "Hesi spin";
+                    bLabel.Text = "Step back three";
+                    sceneImage.BackgroundImage = Properties.Resources.Luka_guarding;
                     break;
                 case 9:
-                    outputLabel.Text = "Doncic is taller than you and blocks you. He grabs the ball and splashes a three.";
-                    yellowLabel.Text = "continue.";
-                    redLabel.Text = "";
-                    blueLabel.Text = "";
+                    outLabel.Text = "Doncic is taller than you and blocks you. He grabs the ball and splashes a three.";
+                    yLabel.Text = "continue.";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.luka_block;
                     break;
                 case 10:
-                    outputLabel.Text = "Chris Paul bit the pump fake and there is a open lane do you take it?";
-                    redLabel.Text = "No";
-                    blueLabel.Text = "Yes";
+                    outLabel.Text = "Chris Paul bit the pump fake and there is a open lane do you take it?";
+                    rLabel.Text = "No";
+                    bLabel.Text = "Yes";
+                    sceneImage.BackgroundImage = Properties.Resources.kyrie_driving;
                     break;
                 case 11:
-                    outputLabel.Text = "you took the shot";
-                    redLabel.Text = "Continue";
-                    redLabel.Text = "";
-                    blueLabel.Text = "";
+                    outLabel.Text = "you took the shot";
+                    rLabel.Text = "Continue";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.kyrie_driving;
                     break;
                 case 12:
-                    outputLabel.Text = "You're playing 1 on 1! There isn't an open man! You throw the ball out of bounds and Luka get the ball.";
-                    yellowLabel.Text = "continue";
-                    redLabel.Text = "";
-                    blueLabel.Text = "";
+                    outLabel.Text = "You're playing 1 on 1! There isn't an open man! You throw the ball out of bounds and Luka get the ball.";
+                    yLabel.Text = "continue";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.lbj_pass;
                     break;
                 case 13:
-                    outputLabel.Text = "You blow by Luka with your speed and have an open lane. What do you do next?";
-                    redLabel.Text = "Dunk";
-                    blueLabel.Text = "Layup";
+                    outLabel.Text = "You blow by Luka with your speed and have an open lane. What do you do next?";
+                    rLabel.Text = "Dunk";
+                    bLabel.Text = "Layup";
+                    sceneImage.BackgroundImage = Properties.Resources.lbj_drive_pass_luka;
                     break;
                 case 14:
-                    outputLabel.Text = "You dribbled around the 3 point line and you can't find an opening what do you do?";
-                    redLabel.Text = "Shoot";
-                    blueLabel.Text = "Drive";
+                    outLabel.Text = "You dribbled around the 3 point line and you can't find an opening what do you do?";
+                    rLabel.Text = "Shoot";
+                    bLabel.Text = "Drive";
+                    sceneImage.BackgroundImage = Properties.Resources.lbj_dribble;
                     break;
                 case 15:
-                    outputLabel.Text = "You passed to a teammate watching the game but you are playing 1v1.";
-                    yellowLabel.Text = "Continue";
-                    redLabel.Text = "";
-                    blueLabel.Text = "";
+                    outLabel.Text = "You passed to a teammate watching the game but you are playing 1v1.";
+                    yLabel.Text = "Continue";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.lbj_pass;
                     break;
                 case 16:
-                    outputLabel.Text = "You post up Chris Paul and found an opening for a shot, do you take it?";
-                    redLabel.Text = "No";
-                    blueLabel.Text = "Yes";
+                    outLabel.Text = "You post up Chris Paul and found an opening for a shot, do you take it?";
+                    rLabel.Text = "No";
+                    bLabel.Text = "Yes";
+                    sceneImage.BackgroundImage = Properties.Resources.lbj_postup_cp;
                     break;
                 case 17:
-                    outputLabel.Text = "You get the shot off. It bounces off the front of the rim and rolls out. Luka quickly grabs the board and makes a shot from the 3 point line";
-                    yellowLabel.Text = "Continue";
-                    redLabel.Text = "";
-                    blueLabel.Text = "";
+                    outLabel.Text = "You get the shot off. It bounces off the front of the rim and rolls out. Luka quickly grabs the board and makes a shot from the 3 point line";
+                    yLabel.Text = "Continue";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.luka_shoot;
                     break;
                 case 18:
-                    outputLabel.Text = "Luka stumbles forwards and drive past for an easy layup.";
-                    yellowLabel.Text = "Continue";
-                    redLabel.Text = "";
-                    blueLabel.Text = "";
+                    outLabel.Text = "Luka stumbles forwards and drive past for an easy layup.";
+                    yLabel.Text = "Continue";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.kyrie_layup;
                     break;
                 case 19:
-                    outputLabel.Text = "You took the lane and you got in-front of Chris Paul, do you go for a layup or stop and go for a jump shot?";
-                    redLabel.Text = "Shoot";
-                    blueLabel.Text = "Layup";
+                    outLabel.Text = "You took the lane and you got in-front of Chris Paul, do you go for a layup or stop and go for a jump shot?";
+                    rLabel.Text = "Shoot";
+                    bLabel.Text = "Layup";
+                    sceneImage.BackgroundImage = Properties.Resources.kyrie_driving;
                     break;
                 case 20:
-                    outputLabel.Text = "You didn't took the lane and Chris Paul recovered from the pump fake and he stole the ball from you.";
-                    yellowLabel.Text = "Continue";
-                    redLabel.Text = "";
-                    blueLabel.Text = "";
+                    outLabel.Text = "You didn't took the lane and Chris Paul recovered from the pump fake and he stole the ball from you.";
+                    yLabel.Text = "Continue";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.cp_steal;
                     break;
                 case 21:
-                    outputLabel.Text = "You missed the shot and Chris Paul got the robound and splashed a 3";
-                    yellowLabel.Text = "Continue";
-                    redLabel.Text = "";
-                    blueLabel.Text = "";
+                    outLabel.Text = "You missed the shot and Chris Paul got the robound and splashed a 3";
+                    yLabel.Text = "Continue";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.cp_shoot;
                     break;
                 case 22:
-                    outputLabel.Text = "Luka chases you down and swats the lame layup off the backboard. Then he shoots an open mid range shot.";
-                    yellowLabel.Text = "Continue";
-                    redLabel.Text = "";
-                    blueLabel.Text = "";
+                    outLabel.Text = "Luka chases you down and swats the lame layup off the backboard. Then he shoots an open mid range shot.";
+                    yLabel.Text = "Continue";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.luka_block;
                     break;
                 case 23:
-                    outputLabel.Text = "Luka tries to block you but you throw down the huge dunk on him.";
-                    yellowLabel.Text = "Continue";
-                    redLabel.Text = "";
-                    blueLabel.Text = "";
+                    outLabel.Text = "Luka tries to block you but you throw down the huge dunk on him.";
+                    yLabel.Text = "Continue";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.lbj_dunk;
                     break;
                 case 24:
-                    outputLabel.Text = "You got through his defense. What do you want to do now?";
-                    redLabel.Text = "Layup";
-                    blueLabel.Text = "Dunk";
+                    outLabel.Text = "You got through his defense. What do you want to do now?";
+                    rLabel.Text = "Layup";
+                    bLabel.Text = "Dunk";
+                    sceneImage.BackgroundImage = Properties.Resources.lbj_drive;
                     break;
                 case 25:
-                    outputLabel.Text = "You made the shot";
-                    yellowLabel.Text = "Continue";
-                    redLabel.Text = "";
-                    blueLabel.Text = "";
+                    outLabel.Text = "You made the shot";
+                    yLabel.Text = "Continue";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.basketball;
                     break;
                 case 26:
                     break;
                 case 27:
-                    outputLabel.Text = "You missed your shot.";
-                    yellowLabel.Text = "Continue";
-                    redLabel.Text = "";
-                    blueLabel.Text = "";
+                    outLabel.Text = "You missed your shot.";
+                    yLabel.Text = "Continue";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.airball;
                     break;
                 case 28:
-                    outputLabel.Text = "You made the shot";
-                    yellowLabel.Text = "Continue";
-                    redLabel.Text = "";
-                    blueLabel.Text = "";
+                    outLabel.Text = "You made the shot";
+                    yLabel.Text = "Continue";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.basketball;
                     break;
                 case 29:
-                    outputLabel.Text = "You kept posting up Chris Paul and found an opening. what do you do?";
-                    redLabel.Text = "Dunk";
-                    blueLabel.Text = "Put up";
+                    outLabel.Text = "You kept posting up Chris Paul and found an opening. what do you do?";
+                    rLabel.Text = "Dunk";
+                    bLabel.Text = "Put up";
+                    sceneImage.BackgroundImage = Properties.Resources.lbj_postup_cp;
                     break;
                 case 30:
-                    outputLabel.Text = "You missed the shot and Chris Paul got the rebound";
-                    yellowLabel.Text = "Continue";
-                    redLabel.Text = "";
-                    blueLabel.Text = "";
+                    outLabel.Text = "You missed the shot and Chris Paul got the rebound";
+                    yLabel.Text = "Continue";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.cp_rebound;
                     break;
                 case 31:
-                    outputLabel.Text = "You missed the shot and Chris Paul got the rebound";
-                    yellowLabel.Text = "Continue";
-                    redLabel.Text = "";
-                    blueLabel.Text = "";
+                    outLabel.Text = "You missed the shot and Chris Paul got the rebound";
+                    yLabel.Text = "Continue";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.cp_rebound;
                     break;
                 case 32:
-                    outputLabel.Text = "You dunked on Chris Paul";
-                    yellowLabel.Text = "Continue";
-                    redLabel.Text = "";
-                    blueLabel.Text = "";
+                    outLabel.Text = "You dunked on Chris Paul";
+                    yLabel.Text = "Continue";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.lbj_dunk;
                     break;
                 case 33:
-                    outputLabel.Text = "You missed the layup";
-                    yellowLabel.Text = "Continue";
-                    redLabel.Text = "";
-                    blueLabel.Text = "";
+                    outLabel.Text = "You missed the layup";
+                    yLabel.Text = "Continue";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.lbj_layup;
                     break;
                 case 34:
-                    outputLabel.Text = "You made the layup";
-                    yellowLabel.Text = "continue";
-                    redLabel.Text = "";
-                    blueLabel.Text = "";
+                    outLabel.Text = "You made the layup";
+                    yLabel.Text = "continue";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.lbj_layup;
                     break;
                 case 35:
-                    outputLabel.Text = "You got blocked";
-                    yellowLabel.Text = "Continue";
-                    redLabel.Text = "";
-                    blueLabel.Text = "";
+                    outLabel.Text = "You got blocked";
+                    yLabel.Text = "Continue";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.cp_block_lbj;
                     break;
                 case 36:
-                    outputLabel.Text = "You're shot went in";
-                    yellowLabel.Text = "Continue";
-                    redLabel.Text = "";
-                    blueLabel.Text = "";
+                    outLabel.Text = "You're shot went in";
+                    yLabel.Text = "Continue";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.basketball;
                     break;
                 case 37:
-                    outputLabel.Text = "You got blocked";
-                    yellowLabel.Text = "Continue";
-                    redLabel.Text = "";
-                    blueLabel.Text = "";
+                    outLabel.Text = "You got blocked";
+                    yLabel.Text = "Continue";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.cp_block_lbj;
                     break;
                 case 38:
-                    outputLabel.Text = "You dunked on Chris Paul";
-                    yellowLabel.Text = "Continue";
-                    redLabel.Text = "";
-                    blueLabel.Text = "";
+                    outLabel.Text = "You dunked on Chris Paul";
+                    yLabel.Text = "Continue";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.lbj_dunk;
                     break;
                 case 98:
-                    outputLabel.Text = "The other player scored. Game Over! Choose wiser next time.";
-                    redLabel.Text = "";
-                    blueLabel.Text = "";
-                    yellowLabel.Text = "";
+                    outLabel.Text = "The other player scored. Game Over! Choose wiser next time.";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    yLabel.Text = "";
+                    Refresh();
+                    Thread.Sleep(3000);
+                    this.Close();
                     break;
                 case 99:
-                    outputLabel.Text = "You scored! you won the game";
+                    outLabel.Text = "You scored! you won the game";
+                    rLabel.Text = "";
+                    bLabel.Text = "";
+                    yLabel.Text = "";
                     Refresh();
                     Thread.Sleep(3000);
                     this.Close();

@@ -28,104 +28,126 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.outputLabel = new System.Windows.Forms.Label();
-            this.redLabel = new System.Windows.Forms.Label();
-            this.blueLabel = new System.Windows.Forms.Label();
-            this.yellowLabel = new System.Windows.Forms.Label();
-            this.pictureRed = new System.Windows.Forms.PictureBox();
-            this.pictureBlue = new System.Windows.Forms.PictureBox();
-            this.pictureYellow = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureRed)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBlue)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureYellow)).BeginInit();
+            this.outLabel = new System.Windows.Forms.Label();
+            this.rLabel = new System.Windows.Forms.Label();
+            this.bLabel = new System.Windows.Forms.Label();
+            this.yLabel = new System.Windows.Forms.Label();
+            this.yellowImage = new System.Windows.Forms.PictureBox();
+            this.sceneImage = new System.Windows.Forms.PictureBox();
+            this.blueImage = new System.Windows.Forms.PictureBox();
+            this.redImage = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.yellowImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sceneImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.blueImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.redImage)).BeginInit();
             this.SuspendLayout();
             // 
-            // outputLabel
+            // outLabel
             // 
-            this.outputLabel.BackColor = System.Drawing.Color.Transparent;
-            this.outputLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.outputLabel.Location = new System.Drawing.Point(390, 39);
-            this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(356, 79);
-            this.outputLabel.TabIndex = 0;
-            this.outputLabel.Text = "What player do your want to be?";
+            this.outLabel.AutoSize = true;
+            this.outLabel.BackColor = System.Drawing.Color.Black;
+            this.outLabel.ForeColor = System.Drawing.Color.White;
+            this.outLabel.Location = new System.Drawing.Point(93, 26);
+            this.outLabel.Name = "outLabel";
+            this.outLabel.Size = new System.Drawing.Size(180, 20);
+            this.outLabel.TabIndex = 9;
+            this.outLabel.Text = "Who do you want to be?";
             // 
-            // redLabel
+            // rLabel
             // 
-            this.redLabel.ForeColor = System.Drawing.Color.White;
-            this.redLabel.Location = new System.Drawing.Point(468, 166);
-            this.redLabel.Name = "redLabel";
-            this.redLabel.Size = new System.Drawing.Size(293, 58);
-            this.redLabel.TabIndex = 1;
-            this.redLabel.Text = "Lebron James";
+            this.rLabel.AutoSize = true;
+            this.rLabel.BackColor = System.Drawing.Color.Black;
+            this.rLabel.ForeColor = System.Drawing.Color.White;
+            this.rLabel.Location = new System.Drawing.Point(296, 406);
+            this.rLabel.Name = "rLabel";
+            this.rLabel.Size = new System.Drawing.Size(110, 20);
+            this.rLabel.TabIndex = 10;
+            this.rLabel.Text = "Lebron James";
             // 
-            // blueLabel
+            // bLabel
             // 
-            this.blueLabel.ForeColor = System.Drawing.Color.White;
-            this.blueLabel.Location = new System.Drawing.Point(468, 237);
-            this.blueLabel.Name = "blueLabel";
-            this.blueLabel.Size = new System.Drawing.Size(225, 54);
-            this.blueLabel.TabIndex = 2;
-            this.blueLabel.Text = "Kyrie Ivring";
+            this.bLabel.AutoSize = true;
+            this.bLabel.BackColor = System.Drawing.Color.Black;
+            this.bLabel.ForeColor = System.Drawing.Color.White;
+            this.bLabel.Location = new System.Drawing.Point(296, 464);
+            this.bLabel.Name = "bLabel";
+            this.bLabel.Size = new System.Drawing.Size(85, 20);
+            this.bLabel.TabIndex = 11;
+            this.bLabel.Text = "Kyrie Ivring";
             // 
-            // yellowLabel
+            // yLabel
             // 
-            this.yellowLabel.ForeColor = System.Drawing.Color.White;
-            this.yellowLabel.Location = new System.Drawing.Point(468, 311);
-            this.yellowLabel.Name = "yellowLabel";
-            this.yellowLabel.Size = new System.Drawing.Size(189, 52);
-            this.yellowLabel.TabIndex = 3;
+            this.yLabel.AutoSize = true;
+            this.yLabel.BackColor = System.Drawing.Color.Black;
+            this.yLabel.ForeColor = System.Drawing.Color.White;
+            this.yLabel.Location = new System.Drawing.Point(296, 535);
+            this.yLabel.Name = "yLabel";
+            this.yLabel.Size = new System.Drawing.Size(0, 20);
+            this.yLabel.TabIndex = 12;
             // 
-            // pictureRed
+            // yellowImage
             // 
-            this.pictureRed.BackgroundImage = global::Basketball_game.Properties.Resources.red_50x50;
-            this.pictureRed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureRed.Location = new System.Drawing.Point(340, 166);
-            this.pictureRed.Name = "pictureRed";
-            this.pictureRed.Size = new System.Drawing.Size(100, 50);
-            this.pictureRed.TabIndex = 4;
-            this.pictureRed.TabStop = false;
+            this.yellowImage.BackgroundImage = global::Basketball_game.Properties.Resources.yellow_50x50;
+            this.yellowImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.yellowImage.Location = new System.Drawing.Point(182, 507);
+            this.yellowImage.Name = "yellowImage";
+            this.yellowImage.Size = new System.Drawing.Size(59, 50);
+            this.yellowImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellowImage.TabIndex = 13;
+            this.yellowImage.TabStop = false;
             // 
-            // pictureBlue
+            // sceneImage
             // 
-            this.pictureBlue.BackgroundImage = global::Basketball_game.Properties.Resources.blue_50x50;
-            this.pictureBlue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBlue.Location = new System.Drawing.Point(340, 237);
-            this.pictureBlue.Name = "pictureBlue";
-            this.pictureBlue.Size = new System.Drawing.Size(100, 50);
-            this.pictureBlue.TabIndex = 5;
-            this.pictureBlue.TabStop = false;
+            this.sceneImage.BackgroundImage = global::Basketball_game.Properties.Resources.kyrie__lebron;
+            this.sceneImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.sceneImage.Location = new System.Drawing.Point(182, 86);
+            this.sceneImage.Name = "sceneImage";
+            this.sceneImage.Size = new System.Drawing.Size(509, 243);
+            this.sceneImage.TabIndex = 8;
+            this.sceneImage.TabStop = false;
             // 
-            // pictureYellow
+            // blueImage
             // 
-            this.pictureYellow.BackgroundImage = global::Basketball_game.Properties.Resources.yellow_50x50;
-            this.pictureYellow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureYellow.Location = new System.Drawing.Point(340, 311);
-            this.pictureYellow.Name = "pictureYellow";
-            this.pictureYellow.Size = new System.Drawing.Size(100, 50);
-            this.pictureYellow.TabIndex = 6;
-            this.pictureYellow.TabStop = false;
+            this.blueImage.BackgroundImage = global::Basketball_game.Properties.Resources.blue_50x50;
+            this.blueImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.blueImage.Location = new System.Drawing.Point(182, 451);
+            this.blueImage.Name = "blueImage";
+            this.blueImage.Size = new System.Drawing.Size(59, 50);
+            this.blueImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.blueImage.TabIndex = 7;
+            this.blueImage.TabStop = false;
+            // 
+            // redImage
+            // 
+            this.redImage.BackgroundImage = global::Basketball_game.Properties.Resources.red_50x50;
+            this.redImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.redImage.Location = new System.Drawing.Point(182, 395);
+            this.redImage.Name = "redImage";
+            this.redImage.Size = new System.Drawing.Size(59, 50);
+            this.redImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.redImage.TabIndex = 6;
+            this.redImage.TabStop = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureYellow);
-            this.Controls.Add(this.pictureBlue);
-            this.Controls.Add(this.pictureRed);
-            this.Controls.Add(this.yellowLabel);
-            this.Controls.Add(this.blueLabel);
-            this.Controls.Add(this.redLabel);
-            this.Controls.Add(this.outputLabel);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(872, 586);
+            this.Controls.Add(this.yellowImage);
+            this.Controls.Add(this.yLabel);
+            this.Controls.Add(this.bLabel);
+            this.Controls.Add(this.rLabel);
+            this.Controls.Add(this.outLabel);
+            this.Controls.Add(this.sceneImage);
+            this.Controls.Add(this.blueImage);
+            this.Controls.Add(this.redImage);
             this.Name = "Form1";
-            this.Text = "Form1";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureRed)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBlue)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureYellow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellowImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sceneImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.blueImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.redImage)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -138,6 +160,14 @@
         private System.Windows.Forms.PictureBox pictureRed;
         private System.Windows.Forms.PictureBox pictureBlue;
         private System.Windows.Forms.PictureBox pictureYellow;
+        private System.Windows.Forms.PictureBox sceneImage;
+        private System.Windows.Forms.PictureBox blueImage;
+        private System.Windows.Forms.PictureBox redImage;
+        private System.Windows.Forms.Label outLabel;
+        private System.Windows.Forms.Label rLabel;
+        private System.Windows.Forms.Label bLabel;
+        private System.Windows.Forms.Label yLabel;
+        private System.Windows.Forms.PictureBox yellowImage;
     }
 }
 

@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -62,6 +65,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -88,6 +92,84 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Luka.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\court.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kyrie, lebron.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luka chris.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kyrie w ball.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lebron against luka.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lb against cp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Luka guarding.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luka block.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kyrie driving.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kyrie shoot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lbj pass.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lbj drive pass luka.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lbj dribble.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lbj postup cp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luka shoot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kyrie layup.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cp steal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cp shoot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lbj dunk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lbj drive.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basketball.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airball.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cp dribble.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cp rebound.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lbj layup.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cp block lbj.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
