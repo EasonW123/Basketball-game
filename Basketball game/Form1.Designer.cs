@@ -47,7 +47,7 @@
             this.outLabel.AutoSize = true;
             this.outLabel.BackColor = System.Drawing.Color.Black;
             this.outLabel.ForeColor = System.Drawing.Color.White;
-            this.outLabel.Location = new System.Drawing.Point(93, 26);
+            this.outLabel.Location = new System.Drawing.Point(38, 330);
             this.outLabel.Name = "outLabel";
             this.outLabel.Size = new System.Drawing.Size(180, 20);
             this.outLabel.TabIndex = 9;
@@ -100,9 +100,9 @@
             // 
             this.sceneImage.BackgroundImage = global::Basketball_game.Properties.Resources.kyrie__lebron;
             this.sceneImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.sceneImage.Location = new System.Drawing.Point(182, 86);
+            this.sceneImage.Location = new System.Drawing.Point(125, 12);
             this.sceneImage.Name = "sceneImage";
-            this.sceneImage.Size = new System.Drawing.Size(509, 243);
+            this.sceneImage.Size = new System.Drawing.Size(645, 288);
             this.sceneImage.TabIndex = 8;
             this.sceneImage.TabStop = false;
             // 
