@@ -67,8 +67,8 @@ namespace Basketball_game
                 else if (scene == 19) { scene = 98; }
                 else if (scene == 4) { scene = 9; }
                 else if (scene == 8) { scene = 18; }
-
-
+                else if (scene == 99) { scene = 1; }
+                else if (scene == 98) { scene = 1; }
             }
             else if (e.KeyCode == Keys.B)  //blue button press
             {
@@ -99,6 +99,8 @@ namespace Basketball_game
                     if (randValue < 40) { scene = 99; }
                     else { scene = 98; }
                 }
+                else if (scene == 99) { scene = 100; }
+                else if (scene == 98) { scene = 100; }
             }
             else if (e.KeyCode == Keys.N) //yellow button
             {
@@ -392,27 +394,25 @@ namespace Basketball_game
                     sceneImage.BackgroundImage = Properties.Resources.lbj_dunk;
                     break;
                 case 98:
-                    outLabel.Text = "The other player scored. Game Over! Choose wiser next time.";
-                    rLabel.Text = "";
-                    bLabel.Text = "";
+                    outLabel.Text = "The other player scored. Game Over! Choose wiser next time. Do you want to play again?";
+                    rLabel.Text = "Yes";
+                    bLabel.Text = "No";
                     yLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.lose;
                     SoundPlayer booSound = new SoundPlayer(Properties.Resources.boo);
                     booSound.Play();
-                    Refresh();
-                    Thread.Sleep(4500);
-                    this.Close();
                     break;
                 case 99:
-                    outLabel.Text = "You scored! you won the game";
-                    rLabel.Text = "";
-                    bLabel.Text = "";
+                    outLabel.Text = "You scored! you won the game. Do you want to play again?";
+                    rLabel.Text = "Yes";
+                    bLabel.Text = "No";
                     yLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.win;
                     SoundPlayer fanSound = new SoundPlayer(Properties.Resources.fans);
                     fanSound.Play();
-                    Refresh();
-                    Thread.Sleep(4500);
+                    break;
+                case 100:
+                    Thread.Sleep(1000);
                     this.Close();
                     break;
                 default:
