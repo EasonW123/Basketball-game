@@ -139,30 +139,35 @@ namespace Basketball_game
                     outLabel.Text = "Who do you want to play against?";
                     rLabel.Text = "Chris Paul";
                     bLabel.Text = "Luka Doncic";
+                    yLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.luka_chris;
                     break;
                 case 3:
                     outLabel.Text = "Who do you want to play against?";
                     rLabel.Text = "Chris Paul";
                     bLabel.Text = "Luka Doncic";
+                    yLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.luka_chris;
                     break;
                 case 4:
                     outLabel.Text = "Game to 1, you start with the ball. What do you want to do?";
                     rLabel.Text = "Shoot it in his face";
                     bLabel.Text = "Dribble";
+                    yLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.kyrie_w_ball;
                     break;
                 case 5:
                     outLabel.Text = "Game to 1, you start with the ball. What do you want to do?";
                     rLabel.Text = "Shoot";
                     bLabel.Text = "Pump fake";
+                    yLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.kyrie_w_ball;
                     break;
                 case 6:
                     outLabel.Text = "Game to 1, you start with the ball. What do you want to do?";
                     rLabel.Text = "Drive";
                     bLabel.Text = "Pass";
+                    yLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.lebron_against_luka;
                     break;
                 case 7:
@@ -176,6 +181,7 @@ namespace Basketball_game
                     outLabel.Text = "You fake left and then crossover to the right. Doncic stays in front of you. What do you do next?";
                     rLabel.Text = "Hesi spin";
                     bLabel.Text = "Step back three";
+                    yLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.Luka_guarding;
                     break;
                 case 9:
@@ -189,6 +195,7 @@ namespace Basketball_game
                     outLabel.Text = "Chris Paul bit the pump fake and there is a open lane do you take it?";
                     rLabel.Text = "No";
                     bLabel.Text = "Yes";
+                    yLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.kyrie_driving;
                     break;
                 case 11:
@@ -209,12 +216,14 @@ namespace Basketball_game
                     outLabel.Text = "You blow by Luka with your speed and have an open lane. What do you do next?";
                     rLabel.Text = "Dunk";
                     bLabel.Text = "Layup";
+                    yLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.lbj_drive_pass_luka;
                     break;
                 case 14:
                     outLabel.Text = "You dribbled around the 3 point line and you can't find an opening what do you do?";
                     rLabel.Text = "Shoot";
                     bLabel.Text = "Drive";
+                    yLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.lbj_dribble;
                     break;
                 case 15:
@@ -228,6 +237,7 @@ namespace Basketball_game
                     outLabel.Text = "You post up Chris Paul and found an opening for a shot, do you take it?";
                     rLabel.Text = "No";
                     bLabel.Text = "Yes";
+                    yLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.lbj_postup_cp;
                     break;
                 case 17:
@@ -250,6 +260,7 @@ namespace Basketball_game
                     outLabel.Text = "You took the lane and you got in-front of Chris Paul, do you go for a layup or stop and go for a jump shot?";
                     rLabel.Text = "Shoot";
                     bLabel.Text = "Layup";
+                    yLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.kyrie_driving;
                     break;
                 case 20:
@@ -284,6 +295,7 @@ namespace Basketball_game
                     outLabel.Text = "You got through his defense. What do you want to do now?";
                     rLabel.Text = "Layup";
                     bLabel.Text = "Dunk";
+                    yLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.lbj_drive;
                     break;
                 case 25:
@@ -313,6 +325,7 @@ namespace Basketball_game
                     outLabel.Text = "You kept posting up Chris Paul and found an opening. what do you do?";
                     rLabel.Text = "Dunk";
                     bLabel.Text = "Put up";
+                    yLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.lbj_postup_cp;
                     break;
                 case 30:
