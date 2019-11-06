@@ -387,7 +387,7 @@ namespace Basketball_game
                     SoundPlayer booSound = new SoundPlayer(Properties.Resources.boo);
                     booSound.Play();
                     Refresh();
-                    Thread.Sleep(4000);
+                    Thread.Sleep(4500);
                     this.Close();
                     break;
                 case 99:
@@ -399,7 +399,7 @@ namespace Basketball_game
                     SoundPlayer fanSound = new SoundPlayer(Properties.Resources.fans);
                     fanSound.Play();
                     Refresh();
-                    Thread.Sleep(4000);
+                    Thread.Sleep(4500);
                     this.Close();
                     break;
                 default:
