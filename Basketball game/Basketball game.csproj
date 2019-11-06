@@ -171,5 +171,23 @@
   <ItemGroup>
     <None Include="Resources\cp block lbj.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rim.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rim.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boo.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fans.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

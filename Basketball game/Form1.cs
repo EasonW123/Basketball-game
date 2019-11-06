@@ -8,12 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
-
+using System.Media;
+/// <summary>
+/// Eason Wu, Erik Smith
+/// Basketball decsion game
+/// ICS3U
+/// November 7,2019
+/// </summary>
 namespace Basketball_game
 {
     public partial class Form1 : Form
     {
+        //variables for the scene
         int scene = 1;
+        // random number generator
         Random ranGen = new Random();
 
         public Form1()
@@ -92,7 +100,7 @@ namespace Basketball_game
                     else { scene = 98; }
                 }
             }
-            else if (e.KeyCode == Keys.N)
+            else if (e.KeyCode == Keys.N) //yellow button
             {
                 if (scene == 7) { scene = 15; }
 
@@ -119,7 +127,7 @@ namespace Basketball_game
 
             switch (scene)
             {
-                
+                // what each scene is doing
                 case 1:
                     outLabel.Text = "What do you want to be?";
                     rLabel.Text = "Lebron James";
@@ -227,7 +235,9 @@ namespace Basketball_game
                     yLabel.Text = "Continue";
                     rLabel.Text = "";
                     bLabel.Text = "";
-                    sceneImage.BackgroundImage = Properties.Resources.luka_shoot;
+                    sceneImage.BackgroundImage = Properties.Resources.rim;
+                    SoundPlayer rimSound = new SoundPlayer(Properties.Resources.rim1);
+                    rimSound.Play();
                     break;
                 case 18:
                     outLabel.Text = "Luka stumbles forwards and drive past for an easy layup.";
@@ -373,8 +383,11 @@ namespace Basketball_game
                     rLabel.Text = "";
                     bLabel.Text = "";
                     yLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.lose;
+                    SoundPlayer booSound = new SoundPlayer(Properties.Resources.boo);
+                    booSound.Play();
                     Refresh();
-                    Thread.Sleep(3000);
+                    Thread.Sleep(4000);
                     this.Close();
                     break;
                 case 99:
@@ -382,8 +395,11 @@ namespace Basketball_game
                     rLabel.Text = "";
                     bLabel.Text = "";
                     yLabel.Text = "";
+                    sceneImage.BackgroundImage = Properties.Resources.win;
+                    SoundPlayer fanSound = new SoundPlayer(Properties.Resources.fans);
+                    fanSound.Play();
                     Refresh();
-                    Thread.Sleep(3000);
+                    Thread.Sleep(4000);
                     this.Close();
                     break;
                 default:
