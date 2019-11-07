@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.outLabel = new System.Windows.Forms.Label();
             this.rLabel = new System.Windows.Forms.Label();
             this.bLabel = new System.Windows.Forms.Label();
@@ -46,10 +47,11 @@
             // 
             this.outLabel.AutoSize = true;
             this.outLabel.BackColor = System.Drawing.Color.Black;
+            this.outLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outLabel.ForeColor = System.Drawing.Color.White;
             this.outLabel.Location = new System.Drawing.Point(38, 330);
             this.outLabel.Name = "outLabel";
-            this.outLabel.Size = new System.Drawing.Size(180, 20);
+            this.outLabel.Size = new System.Drawing.Size(246, 26);
             this.outLabel.TabIndex = 9;
             this.outLabel.Text = "Who do you want to be?";
             // 
@@ -57,10 +59,11 @@
             // 
             this.rLabel.AutoSize = true;
             this.rLabel.BackColor = System.Drawing.Color.Black;
+            this.rLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rLabel.ForeColor = System.Drawing.Color.White;
-            this.rLabel.Location = new System.Drawing.Point(296, 406);
+            this.rLabel.Location = new System.Drawing.Point(285, 409);
             this.rLabel.Name = "rLabel";
-            this.rLabel.Size = new System.Drawing.Size(110, 20);
+            this.rLabel.Size = new System.Drawing.Size(150, 26);
             this.rLabel.TabIndex = 10;
             this.rLabel.Text = "Lebron James";
             // 
@@ -68,10 +71,11 @@
             // 
             this.bLabel.AutoSize = true;
             this.bLabel.BackColor = System.Drawing.Color.Black;
+            this.bLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bLabel.ForeColor = System.Drawing.Color.White;
-            this.bLabel.Location = new System.Drawing.Point(296, 464);
+            this.bLabel.Location = new System.Drawing.Point(285, 462);
             this.bLabel.Name = "bLabel";
-            this.bLabel.Size = new System.Drawing.Size(85, 20);
+            this.bLabel.Size = new System.Drawing.Size(121, 26);
             this.bLabel.TabIndex = 11;
             this.bLabel.Text = "Kyrie Ivring";
             // 
@@ -79,10 +83,11 @@
             // 
             this.yLabel.AutoSize = true;
             this.yLabel.BackColor = System.Drawing.Color.Black;
+            this.yLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.yLabel.ForeColor = System.Drawing.Color.White;
-            this.yLabel.Location = new System.Drawing.Point(296, 535);
+            this.yLabel.Location = new System.Drawing.Point(285, 531);
             this.yLabel.Name = "yLabel";
-            this.yLabel.Size = new System.Drawing.Size(0, 20);
+            this.yLabel.Size = new System.Drawing.Size(0, 26);
             this.yLabel.TabIndex = 12;
             // 
             // yellowImage
@@ -140,7 +145,10 @@
             this.Controls.Add(this.sceneImage);
             this.Controls.Add(this.blueImage);
             this.Controls.Add(this.redImage);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.Text = "Basketball game";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.yellowImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sceneImage)).EndInit();
